@@ -22,3 +22,43 @@ func romanToInt(s string) int {
     }
     return c
 }
+
+/*
+public class Solution {
+    public int RomanToInt(string s) {
+        Dictionary<string, int> m = new Dictionary<string, int>
+        {
+            { "I", 1 },
+            { "V", 5 },
+            { "X", 10 },
+            { "L", 50 },
+            { "C", 100 },
+            { "D", 500 },
+            { "M", 1000 }
+        };
+        
+        string r = "";
+        string l = "";
+        int c = 0;
+        
+        for (int i = 0; i < s.Length; i++)
+        {
+            r = s[i].ToString();
+            
+            if (i > 0 && m[r] > m[l])
+            {
+                c -= m[l];
+                c += (m[r] - m[l]);
+            }
+            else
+            {
+                c += m[r];
+            }
+            
+            l = r;
+        }
+        
+        return c;  
+    }
+}
+*/
