@@ -1,5 +1,3 @@
-using System;
-
 public class Solution {
     public bool IsUgly(int n) {
         if (n <= 0) return false;
