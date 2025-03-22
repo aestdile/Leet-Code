@@ -1,4 +1,3 @@
-# Write your MySQL query statement below
 SELECT w1.id
 FROM Weather w1
 JOIN Weather w2
